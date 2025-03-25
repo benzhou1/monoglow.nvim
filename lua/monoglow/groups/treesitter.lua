@@ -64,8 +64,8 @@ function M.get(c)
     ["@markup.link.label.symbol"] = "Identifier",
     ["@markup.link.url"] = "Underlined",
     ["@markup.list"] = { fg = c.gray4 }, -- For special punctutation that does not fall in the categories before.
-    ["@markup.list.checked"] = { fg = c.light_green }, -- For brackets and parens.
-    ["@markup.list.unchecked"] = { fg = c.light_cyan }, -- For brackets and parens.
+    ["@markup.list.checked"] = { fg = c.gray4 }, -- For brackets and parens.
+    ["@markup.list.unchecked"] = { fg = c.glow }, -- For brackets and parens.
     ["@markup.math"] = "Special",
     ["@markup.quote"] = { fg = c.gray6 },
     ["@markup.raw"] = "String",
@@ -99,6 +99,38 @@ function M.get(c)
     ["@variable.member"] = { fg = c.syntax.var_member }, -- For fields.
     ["@variable.parameter"] = { fg = c.syntax.func_param },
     ["@variable.parameter.builtin"] = "@variable.builtin", -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
+
+    -- Lua
+    ["@keyword.function.lua"] = { fg = c.glow },
+    ["@keyword.repeat.lua"] = { fg = c.glow },
+    ["@keyword.conditional.lua"] = { fg = c.glow },
+    -- Luadoc
+    ["@type.luadoc"] = { fg = c.special.documentation },
+    ["@keyword.return.luadoc"] = "@type.luadoc",
+    ["@keyword.function.luadoc"] = "@type.luadoc",
+    ["@operator.luadoc"] = "@type.luadoc",
+    ["@type.builtin.luadoc"] = "@type.luadoc",
+    ["@keyword.luadoc"] = "@type.luadoc",
+    ["@variable.luadoc"] = "@type.luadoc",
+    ["@variable.parameter.luadoc"] = "@type.luadoc",
+    ["@lsp.type.type.lua"] = "@type.luadoc",
+    ["@variable.member.luadoc"] = "@type.luadoc",
+    ["@lsp.typemod.property.declaration.lua"] = "@type.luadoc",
+    ["@lsp.type.keyword.lua"] = "@type.luadoc",
+
+    -- Python
+    ["@keyword.function.python"] = { fg = c.glow },
+    ["@keyword.repeat.python"] = { fg = c.glow },
+    ["@keyword.type.python"] = { fg = c.glow },
+    ["@keyword.conditional.python"] = { fg = c.glow },
+    ["@parameter.self.python"] = { fg = c.glow },
+    -- docstring
+    ["@string.documentation.python"] = { fg = c.special.comments },
+
+    -- Markdown
+    ["@markup.link.label.markdown_inline"] = { fg = c.glow },
+    ["@markup.link.markdown_inline"] = { fg = c.gray4 },
+    ["@lsp.type.class.markdown"] = { fg = c.gray4 },
   }
 end
 

@@ -27,25 +27,25 @@ function M.setup(opts)
 
   colors.none = "NONE"
 
-  colors.diff = {
+  colors.diff = vim.tbl_deep_extend("keep", colors.diff or {}, {
     add = util.darken(colors.git.add, 0.60),
     delete = util.darken(colors.git.delete, 0.60),
     change = colors.gray6,
     text = colors.gray5,
-  }
+  })
 
-  colors.black = util.blend_bg(colors.bg, 0.8, "#000000")
+  colors.black = colors.black or util.blend_bg(colors.bg, 0.8, "#000000")
 
-  colors.bg_menu = util.lighten(colors.bg, 0.95)
-  colors.bg_popup = util.lighten(colors.bg, 0.955)
+  colors.bg_menu = opts.transparent and colors.none or util.lighten(colors.bg, 0.95)
+  colors.bg_popup = opts.transparent and colors.none or util.lighten(colors.bg, 0.955)
   colors.border = colors.gray4
-  colors.fg_sidebar = colors.gray6
+  colors.fg_sidebar = colors.fg_sidebar or colors.gray6
   colors.fg_gutter = colors.gray4
-  colors.bg_statusline = util.lighten(colors.bg, 0.97)
+  colors.bg_statusline = opts.transparent and colors.none or util.lighten(colors.bg, 0.97)
 
   colors.cur_line = util.lighten(colors.bg, 0.92)
   colors.cur_line_nr = colors.gray7
-  colors.lsp_ref = util.lighten(colors.cur_line, 0.97)
+  colors.lsp_ref = colors.lsp_ref or util.lighten(colors.cur_line, 0.97)
   colors.visual = util.lighten(colors.cur_line, 0.95)
   colors.selection = colors.cur_line
 
@@ -54,6 +54,7 @@ function M.setup(opts)
     comment = util.darken(colors.gray4, 0.95),
     exception = util.darken(colors.gray5, 0.92),
     keyword = util.darken(colors.gray6, 0.90),
+    documentation = colors.gray5,
     param = util.lighten(colors.gray5, 0.70),
     property = util.darken(colors.gray7, 0.80),
     whitespace = util.lighten(colors.gray2, 0.85),
@@ -62,10 +63,11 @@ function M.setup(opts)
   colors.icon = colors.gray5
   colors.title = colors.gray5
 
-  colors.syntax = {
+  colors.syntax = vim.tbl_deep_extend("keep", colors.syntax or {}, {
     boolean = colors.blue2,
     builtin = colors.gray5,
     comment = colors.special.comment,
+    documentation = colors.special.documentation,
     const = colors.gray7,
     const_builtin = colors.gray6,
     func_call = colors.gray6,
@@ -85,16 +87,16 @@ function M.setup(opts)
     type_primitive = colors.gray7,
     var = colors.gray8,
     var_member = colors.gray7,
-  }
+  })
 
-  colors.fs = {
+  colors.fs = vim.tbl_deep_extend("keep", colors.fs or {}, {
     dir = colors.gray7,
     file = colors.gray8,
     exec = colors.blue2,
     link = colors.luster,
     binary_data = colors.gray6,
     socket = colors.gray6,
-  }
+  })
 
   colors.cmp = {
     kind = colors.gray7,
@@ -113,7 +115,7 @@ function M.setup(opts)
   -- inspirated from
   -- https://github.com/PieterHeijman/terminal-color-themes/blob/master/movies/Psycho.json
   ---@class TerminalColors
-  colors.terminal = {
+  colors.terminal = vim.tbl_deep_extend("keep", colors.terminal or {}, {
     black = colors.gray3,
     black_bright = util.lighten(colors.gray3, 0.80),
     red = colors.luster,
@@ -130,7 +132,7 @@ function M.setup(opts)
     cyan_bright = util.lighten(colors.gray8, 0.80, colors.gray10),
     white = colors.gray10,
     white_bright = colors.white,
-  }
+  })
 
   opts.on_colors(colors)
 

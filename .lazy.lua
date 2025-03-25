@@ -1,7 +1,9 @@
 local M = {
   module = "monoglow",
-  colorscheme = "monoglow",
-  opts = {},
+  colorscheme = "monoglow-komau",
+  opts = {
+    transparent = true,
+  },
   globals = { vim = vim },
 }
 
@@ -40,7 +42,7 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 
 return {
   {
-    "wnkz/monoglow.nvim",
+    "benzhou1/monoglow.nvim",
     priority = 1000,
     lazy = false,
     opts = M.opts,

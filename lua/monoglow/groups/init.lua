@@ -25,6 +25,10 @@ M.plugins = {
   ["telescope.nvim"] = "telescope",
   ["which-key.nvim"] = "which-key",
   ["window-picker"] = "nvim-window-picker",
+  ["snacks.nvim"] = "snacks",
+  ["noice.nvim"] = "noice",
+  ["trouble.nvim"] = "trouble",
+  ["fzf-lua.nvim"] = "fzf-lua",
 }
 
 local me = debug.getinfo(1, "S").source:sub(2)

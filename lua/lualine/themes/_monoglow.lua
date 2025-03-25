@@ -9,31 +9,80 @@ function M.get(style)
   local hl = {}
 
   hl.normal = {
-    a = { bg = util.darken(colors.bg_statusline, 0.2), fg = colors.gray8 },
-    b = { bg = util.darken(colors.bg_statusline, 0.5), fg = colors.gray7 },
-    c = { bg = colors.bg_statusline, fg = colors.fg_sidebar },
+    a = {
+      bg = config.transparent and colors.none or util.darken(colors.bg_statusline, 0.2),
+      fg = colors.gray8,
+    },
+    b = {
+      bg = config.transparent and colors.none or util.darken(colors.bg_statusline, 0.5),
+      fg = colors.gray7,
+    },
+    c = {
+      bg = config.transparent and colors.none or colors.bg_statusline,
+      fg = colors.fg_sidebar,
+    },
   }
 
   hl.insert = {
-    a = { bg = colors.glow, fg = colors.black },
-    b = { bg = util.darken(colors.bg_statusline, 0.5), fg = colors.gray7 },
-    c = { bg = colors.bg_statusline, fg = colors.fg_sidebar },
+    a = {
+      bg = colors.glow,
+      fg = colors.black,
+    },
+    b = {
+      bg = config.transparent and colors.none or util.darken(colors.bg_statusline, 0.5),
+      fg = colors.gray7,
+    },
+    c = {
+      bg = config.transparent and colors.none or colors.bg_statusline,
+      fg = colors.fg_sidebar,
+    },
   }
 
-  hl.command = hl.insert
+  hl.command = {
+    a = {
+      bg = colors.light_yellow,
+      fg = colors.black,
+    },
+    b = {
+      bg = config.transparent and colors.none or util.darken(colors.bg_statusline, 0.5),
+      fg = colors.gray7,
+    },
+    c = {
+      bg = config.transparent and colors.none or colors.bg_statusline,
+      fg = colors.fg_sidebar,
+    },
+  }
 
   hl.visual = {
-    a = { bg = colors.gray9, fg = colors.black },
-    b = { bg = util.darken(colors.bg_statusline, 0.5), fg = colors.gray7 },
-    c = { bg = colors.bg_statusline, fg = colors.fg_sidebar },
+    a = {
+      bg = colors.blue2,
+      fg = colors.black,
+    },
+    b = {
+      bg = config.transparent and colors.none or util.darken(colors.bg_statusline, 0.5),
+      fg = colors.gray7,
+    },
+    c = {
+      bg = config.transparent and colors.none or colors.bg_statusline,
+      fg = colors.fg_sidebar,
+    },
   }
 
   hl.replace = hl.visual
 
   hl.inactive = {
-    a = { bg = colors.bg, fg = colors.bg },
-    b = { bg = colors.bg, fg = colors.bg },
-    c = { bg = colors.bg, fg = colors.bg },
+    a = {
+      bg = config.transparent and colors.none or colors.bg,
+      fg = colors.black,
+    },
+    b = {
+      bg = config.transparent and colors.none or colors.bg,
+      fg = colors.gray7,
+    },
+    c = {
+      bg = config.transparent and colors.none or colors.bg,
+      fg = colors.fg_sidebar,
+    },
   }
 
   if config.lualine_bold then

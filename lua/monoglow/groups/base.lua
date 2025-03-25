@@ -17,7 +17,7 @@ function M.get(c, opts)
     -- editor:visual
     Visual = { bg = c.visual },
     VisualNOS = "Visual",
-    LspReferenceText = { bg = c.lsp_ref },
+    LspReferenceText = { bg = c.lsp_ref, underline = true },
 
     -- editor:float
     NormalFloat = { fg = c.fg, bg = c.bg_popup },
@@ -42,10 +42,10 @@ function M.get(c, opts)
     FoldColumn = { fg = c.gray4 },
 
     -- editor:diff
-    DiffAdd = { fg = c.bg, bg = c.diff.add }, -- diff mode: Added line |diff.txt|
-    DiffChange = { fg = c.bg, bg = c.diff.change }, -- diff mode: Changed line |diff.txt|
-    DiffDelete = { fg = c.bg, bg = c.diff.delete }, -- diff mode: Deleted line |diff.txt|
-    DiffText = { fg = c.bg, bg = c.diff.text }, -- diff mode: Changed text within a changed line |diff.txt|
+    DiffAdd = { bg = c.diff.add }, -- diff mode: Added line |diff.txt|
+    DiffChange = { bg = c.diff.change }, -- diff mode: Changed line |diff.txt|
+    DiffDelete = { bg = c.diff.delete }, -- diff mode: Deleted line |diff.txt|
+    DiffText = { bg = c.diff.text }, -- diff mode: Changed text within a changed line |diff.txt|
 
     -- editor:menu
     Pmenu = { fg = c.fg, bg = opts.transparent and c.none or c.bg_menu },
@@ -101,7 +101,7 @@ function M.get(c, opts)
     DiagnosticHint = { fg = c.hint }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
     DiagnosticInfo = { fg = c.info }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
     DiagnosticOk = { fg = c.ok }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-    DiagnosticUnnecessary = { fg = c.fg }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+    DiagnosticUnnecessary = { fg = c.special.comments }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
     DiagnosticWarn = { fg = c.warning }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
 
     DiagnosticVirtualTextError = { bg = util.blend_bg(c.error, 0.1), fg = c.error }, -- Used for "Error" diagnostic virtual text
