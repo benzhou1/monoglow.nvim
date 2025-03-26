@@ -10,6 +10,7 @@ function M.get(c, opts)
     NormalNC = "Normal", -- normal text in non-current windows
     Title = { fg = c.title },
     Whitespace = { fg = c.special.whitespace },
+    TabLineSel = { fg = c.glow, bg = c.glow },
 
     -- editor:nontext
     NonText = { fg = c.gray4 },
