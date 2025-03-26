@@ -125,7 +125,7 @@ function M.get(c)
     ["@keyword.conditional.python"] = { fg = c.glow },
     ["@parameter.self.python"] = { fg = c.glow },
     -- docstring
-    ["@string.documentation.python"] = { fg = c.special.comments },
+    ["@string.documentation.python"] = { fg = c.special.comment },
 
     -- Markdown
     ["@markup.link.label.markdown_inline"] = { fg = c.glow },
