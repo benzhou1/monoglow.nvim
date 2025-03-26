@@ -18,7 +18,7 @@ local function style(opts)
     black = "#222222",
 
     fg = "#c7c7c7",
-    bg = util.lighten("#222222", 0.9),
+    bg = "#333333",
     glow = "#de6e7c",
 
     blue1 = "#b2d8d8",
@@ -50,7 +50,7 @@ local function style(opts)
     ret.gray9 = ret.fg
     ret.gray10 = ret.fg
     ret.white = ret.fg
-    ret.bg = util.darken("#c7c7c7", 0.7)
+    ret.bg = "#9b9b9b"
     ret.glow = "#B31D28"
     ret.luster = ret.gray4
 
@@ -87,21 +87,21 @@ local function style(opts)
   }
   ret.terminal = {
     black = ret.bg,
-    black_bright = ret.gray3,
-    red = ret.glow,
-    red_bright = ret.gray3,
-    green = ret.light_green,
-    green_bright = ret.gray3,
-    yellow = ret.light_yellow,
-    yellow_bright = ret.gray4,
-    blue = ret.light_blue,
-    blue_bright = ret.gray3,
-    magenta = ret.blue2,
-    magenta_bright = ret.gray3,
-    cyan = ret.light_cyan,
-    cyan_bright = ret.gray3,
+    black_bright = ret.fg,
+    red = ret.fg,
+    red_bright = ret.fg,
+    green = ret.glow,
+    green_bright = ret.fg,
+    yellow = ret.fg,
+    yellow_bright = ret.fg,
+    blue = ret.bg,
+    blue_bright = ret.fg,
+    magenta = ret.fg,
+    magenta_bright = ret.fg,
+    cyan = ret.fg,
+    cyan_bright = ret.fg,
     white = ret.fg,
-    white_bright = ret.gray3,
+    white_bright = ret.fg,
   }
   ret.fs = {
     dir = ret.glow,
