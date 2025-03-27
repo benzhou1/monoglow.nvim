@@ -77,6 +77,7 @@ function M.get(c, opts)
     PreProc = "Keyword", -- (preferred) generic Preprocessor
     Repeat = "Keyword",
     Special = { fg = c.syntax.special }, -- (preferred) any special symbol
+    SpecialKey = "Special",
     Statement = "Keyword", -- (preferred) any statement
     Type = { fg = c.syntax.type }, -- (preferred) int, long, char, etc.
     Variable = { fg = c.syntax.var },
