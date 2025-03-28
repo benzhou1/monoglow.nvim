@@ -43,7 +43,7 @@ local function style(opts)
     ret.gray2 = ret.fg
     ret.gray3 = ret.fg
     ret.gray4 = "#6E6763"
-    ret.gray5 = "#3D4454"
+    ret.gray5 = "#6E6763"
     ret.gray6 = ret.fg
     ret.gray7 = ret.fg
     ret.gray8 = ret.fg

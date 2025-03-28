@@ -103,7 +103,7 @@ function M.get(c, opts)
     DiagnosticHint = { fg = c.hint }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
     DiagnosticInfo = { fg = c.info }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
     DiagnosticOk = { fg = c.ok }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
-    DiagnosticUnnecessary = { fg = c.special.comments }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
+    DiagnosticUnnecessary = { fg = c.special.comment }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
     DiagnosticWarn = { fg = c.warning }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
 
     DiagnosticVirtualTextError = { bg = util.blend_bg(c.error, 0.1), fg = c.error }, -- Used for "Error" diagnostic virtual text
@@ -111,6 +111,12 @@ function M.get(c, opts)
     DiagnosticVirtualTextInfo = { bg = util.blend_bg(c.info, 0.1), fg = c.info }, -- Used for "Information" diagnostic virtual text
     DiagnosticVirtualTextOk = { bg = util.blend_bg(c.ok, 0.1), fg = c.ok }, -- Used for "Ok" diagnostic virtual text
     DiagnosticVirtualTextWarn = { bg = util.blend_bg(c.warning, 0.1), fg = c.warning }, -- Used for "Warning" diagnostic virtual text
+
+    DiagnosticVirtualLineError = "DiagnosticVirtualTextError", -- Used for "Error" diagnostic virtual line
+    DiagnosticVirtualLineHint = "DiagnosticVirtualTextHint", -- Used for "Hint" diagnostic virtual line
+    DiagnosticVirtualLineInfo = "DiagnosticVirtualTextInfo", -- Used for "Information" diagnostic virtual line
+    DiagnosticVirtualLineOk = "DiagnosticVirtualTextOk", -- Used for "Ok" diagnostic virtual line
+    DiagnosticVirtualLineWarn = "DiagnosticVirtualTextWarn", -- Used for "Warning" diagnostic virtual line
 
     DiagnosticUnderlineError = { undercurl = true, sp = c.error }, -- Used to underline "Error" diagnostics
     DiagnosticUnderlineHint = { undercurl = true, sp = c.hint }, -- Used to underline "Hint" diagnostics
