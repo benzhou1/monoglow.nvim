@@ -119,6 +119,9 @@ function M.get(c)
     ["@lsp.type.keyword.lua"] = "@type.luadoc",
 
     -- Python
+    ["@keyword.import.python"] = { fg = c.fg },
+    ["@module.python"] = { fg = c.fg },
+    ["@keyword.exception.python"] = { fg = c.glow },
     ["@keyword.function.python"] = { fg = c.glow },
     ["@keyword.repeat.python"] = { fg = c.glow },
     ["@keyword.type.python"] = { fg = c.glow },

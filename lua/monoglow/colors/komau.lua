@@ -73,6 +73,7 @@ local function style(opts)
     var = ret.fg,
     builtin = ret.fg,
     keyword_return = ret.glow,
+    keyword = ret.glow,
   }
   ret.git = {
     add = "#baffc9",
