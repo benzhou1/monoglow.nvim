@@ -10,8 +10,8 @@ function M.get(style)
 
   hl.normal = {
     a = {
-      bg = config.transparent and colors.none or util.darken(colors.bg_statusline, 0.2),
-      fg = colors.gray8,
+      bg = colors.glow,
+      fg = colors.black,
     },
     b = {
       bg = config.transparent and colors.none or util.darken(colors.bg_statusline, 0.5),
@@ -25,7 +25,7 @@ function M.get(style)
 
   hl.insert = {
     a = {
-      bg = colors.glow,
+      bg = colors.light_red,
       fg = colors.black,
     },
     b = {
