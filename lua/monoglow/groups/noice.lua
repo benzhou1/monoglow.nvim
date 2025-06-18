@@ -13,6 +13,7 @@ function M.get(c, opts)
     NoiceCmdlinePopupTitleFilter = "NoiceCmdlinePopupTitle",
     NoiceCmdlinePopupTitleCalculator = "NoiceCmdlinePopupTitle",
     NoiceCmdlinePopupTitleSearch = "NoiceCmdlinePopupTitle",
+    EchoNotificationError = { fg = c.glow },
 
     NoiceCmdlineIcon = { fg = c.glow },
     NoiceCmdlineIconSearch = "NoiceCmdlineIcon",

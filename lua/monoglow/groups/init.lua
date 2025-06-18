@@ -29,6 +29,7 @@ M.plugins = {
   ["noice.nvim"] = "noice",
   ["trouble.nvim"] = "trouble",
   ["fzf-lua.nvim"] = "fzf-lua",
+  ["portal.nvim"] = "portal",
 }
 
 local me = debug.getinfo(1, "S").source:sub(2)
