@@ -13,6 +13,7 @@ local util = require("monoglow.util")
 local M = {}
 
 M.plugins = {
+  ["smart-motion.nvim"] = "smart_motion",
   ["blink.cmp"] = "blink-cmp",
   ["dashboard-nvim"] = "dashboard",
   ["flash.nvim"] = "flash",

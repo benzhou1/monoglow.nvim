@@ -87,7 +87,7 @@ local function style(opts)
     text = "#465983",
   }
   ret.terminal = {
-    black = ret.bg,
+    black = ret.fg,
     black_bright = ret.fg,
     red = ret.fg,
     red_bright = ret.fg,
@@ -95,7 +95,7 @@ local function style(opts)
     green_bright = ret.fg,
     yellow = ret.fg,
     yellow_bright = ret.fg,
-    blue = ret.bg,
+    blue = ret.glow,
     blue_bright = ret.fg,
     magenta = ret.fg,
     magenta_bright = ret.fg,

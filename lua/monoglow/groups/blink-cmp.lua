@@ -8,7 +8,7 @@ function M.get(c)
     BlinkCmpGhostText = { fg = c.exception },
     BlinkCmpLabel = { fg = c.fg, bg = c.none },
     BlinkCmpLabelMatch = { fg = c.glow },
-    BlinkCmpMenuSelection = { bg = c.bg },
+    BlinkCmpMenuSelection = { bg = c.cur_line },
     BlinkCmpLabelDeprecated = { fg = c.cmp.deprecated, bg = c.none, strikethrough = true },
     BlinkCmpMenu = { fg = c.comment, bg = c.none },
     BlinkCmpMenuBorder = { fg = c.border, bg = c.none },

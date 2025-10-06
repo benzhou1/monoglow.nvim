@@ -15,6 +15,7 @@ function M.setup(opts)
   opts = require("monoglow.config").extend(opts)
 
   local colors = require("monoglow.colors").setup(opts)
+  M.colors = colors
   local groups = require("monoglow.groups").setup(colors, opts)
 
   -- only needed to clear when not the default colorscheme

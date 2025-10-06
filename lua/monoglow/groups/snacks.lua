@@ -7,7 +7,7 @@ function M.get(c, opts)
     ["SnacksInputTitle"] = { fg = c.glow },
     ["SnacksInputBorder"] = "Comment",
     ["SnacksInputPrompt"] = "Comment",
-    ["SnacksIndent"] = "Comment",
+    ["SnacksIndent"] = "Conceal",
     ["SnacksIndentScope"] = { fg = c.glow },
     ["MiniIndentscopeSymbol"] = "Comment",
     ["SnacksPickerDir"] = "Comment",
