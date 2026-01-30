@@ -76,7 +76,7 @@ local function style(opts)
     keyword = ret.glow,
   }
   ret.git = {
-    add = "#baffc9",
+    add = "#65c997",
     change = "#ffffba",
     delete = "#ffb3ba",
   }
