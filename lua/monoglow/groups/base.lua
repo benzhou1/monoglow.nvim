@@ -34,7 +34,7 @@ function M.get(c, opts)
 
     -- editor:search
     CurSearch = "IncSearch",
-    IncSearch = { fg = c.black, bg = c.glow }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+    IncSearch = { fg = c.black, bg = c.glow, bold = true }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     Search = { fg = c.glow, bold = true },
     Substitute = "Search",
 
