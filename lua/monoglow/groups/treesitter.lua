@@ -104,6 +104,9 @@ function M.get(c)
     ["@keyword.function.lua"] = { fg = c.glow },
     ["@keyword.repeat.lua"] = { fg = c.glow },
     ["@keyword.conditional.lua"] = { fg = c.glow },
+    ["@lsp.type.keyword.lua"] = { fg = c.glow },
+    ["@lsp.mod.readonly.lua"] = "@boolean.lua",
+    ["@lsp.typemod.property.declaration.lua"] = "@property",
     -- Luadoc
     ["@type.luadoc"] = { fg = c.special.documentation },
     ["@keyword.return.luadoc"] = "@type.luadoc",
@@ -115,8 +118,8 @@ function M.get(c)
     ["@variable.parameter.luadoc"] = "@type.luadoc",
     ["@lsp.type.type.lua"] = "@type.luadoc",
     ["@variable.member.luadoc"] = "@type.luadoc",
-    ["@lsp.typemod.property.declaration.lua"] = "@type.luadoc",
-    ["@lsp.type.keyword.lua"] = "@type.luadoc",
+    ["@lsp.typemod.keyword.documentation.lua"] = "@type.luadoc",
+    ["@lsp.typemod.class.declaration.lua"] = "@type.luadoc",
 
     -- Python
     ["@keyword.import.python"] = { fg = c.fg },
