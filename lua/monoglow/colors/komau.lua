@@ -81,10 +81,10 @@ local function style(opts)
     delete = "#ffb3ba",
   }
   ret.diff = {
-    add = "#2F632F",
-    delete = "#763F34",
-    change = "#3D4454",
-    text = "#465983",
+    add = "#294436",
+    delete = "#45302B",
+    change = "#385570",
+    text = "#484A4A",
   }
   ret.terminal = {
     black = ret.fg,
