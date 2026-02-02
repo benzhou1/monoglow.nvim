@@ -120,6 +120,7 @@ function M.get(c)
     ["@variable.member.luadoc"] = "@type.luadoc",
     ["@lsp.typemod.keyword.documentation.lua"] = "@type.luadoc",
     ["@lsp.typemod.class.declaration.lua"] = "@type.luadoc",
+    ["@lsp.type.namespace.lua"] = "String",
 
     -- Python
     ["@keyword.import.python"] = { fg = c.fg },
