@@ -130,7 +130,7 @@ function M.get(c)
     ["@markup.link.label"] = "SpecialChar",
     ["@markup.link.label.symbol"] = "Identifier",
     ["@markup.link.url"] = "Underlined",
-    ["@markup.list"] = { fg = c.gray4 }, -- For special punctutation that does not fall in the categories before.
+    ["@markup.list"] = { fg = c.gray4 }, -- For special punctuation that does not fall in the categories before.
     ["@markup.list.checked"] = { fg = c.gray4 }, -- For brackets and parens.
     ["@markup.list.unchecked"] = { fg = c.glow }, -- For brackets and parens.
     ["@markup.math"] = "Special",
@@ -144,6 +144,13 @@ function M.get(c)
     -- Json
     ["jsonMissingCommaError"] = { fg = c.error },
     ["jsonNoQuotesError"] = { fg = c.error },
+
+    -- Http
+    ["@keyword.kulala_http"] = { fg = c.gray4 },
+    ["@string.special.url.kulala_http"] = { fg = c.glow, underline = true },
+    ["@variable.kulala_http"] = { fg = c.glow, underline = true },
+    ["@function.method.kulala_http"] = { fg = c.glow },
+    ["@form_param_name.kulala_http"] = { fg = c.gray6, italic = true },
   }
 end
 
