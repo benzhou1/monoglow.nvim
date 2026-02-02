@@ -57,21 +57,6 @@ function M.get(c)
     ["@markup.emphasis"] = { italic = true },
     ["@markup.environment"] = "Macro",
     ["@markup.environment.name"] = "Type",
-    ["@markup.heading"] = "Title",
-    ["@markup.italic"] = { italic = true },
-    ["@markup.link"] = { fg = c.gray6 },
-    ["@markup.link.label"] = "SpecialChar",
-    ["@markup.link.label.symbol"] = "Identifier",
-    ["@markup.link.url"] = "Underlined",
-    ["@markup.list"] = { fg = c.gray4 }, -- For special punctutation that does not fall in the categories before.
-    ["@markup.list.checked"] = { fg = c.gray4 }, -- For brackets and parens.
-    ["@markup.list.unchecked"] = { fg = c.glow }, -- For brackets and parens.
-    ["@markup.math"] = "Special",
-    ["@markup.quote"] = { fg = c.gray6 },
-    ["@markup.raw"] = "String",
-    ["@markup.strikethrough"] = { strikethrough = true },
-    ["@markup.strong"] = { fg = c.gray4, bold = true },
-    ["@markup.underline"] = { underline = true },
     ["@module"] = "Include",
     ["@module.builtin"] = { fg = c.syntax.builtin }, -- Variable names that are defined by the languages, like `this` or `self`.
     ["@namespace.builtin"] = "@variable.builtin",
@@ -138,6 +123,27 @@ function M.get(c)
     ["@markup.link.label.markdown_inline"] = { fg = c.glow },
     ["@markup.link.markdown_inline"] = { fg = c.gray4 },
     ["@lsp.type.class.markdown"] = { fg = c.gray4 },
+    ["@markup.heading"] = "Search",
+    ["@markup.heading.1"] = "Search",
+    ["@markup.italic"] = { italic = true },
+    ["@markup.link"] = { fg = c.gray6 },
+    ["@markup.link.label"] = "SpecialChar",
+    ["@markup.link.label.symbol"] = "Identifier",
+    ["@markup.link.url"] = "Underlined",
+    ["@markup.list"] = { fg = c.gray4 }, -- For special punctutation that does not fall in the categories before.
+    ["@markup.list.checked"] = { fg = c.gray4 }, -- For brackets and parens.
+    ["@markup.list.unchecked"] = { fg = c.glow }, -- For brackets and parens.
+    ["@markup.math"] = "Special",
+    ["@markup.quote"] = { fg = c.gray6 },
+    ["@markup.raw"] = "String",
+    ["@markup.strikethrough"] = { strikethrough = true },
+    ["@markup.strong"] = { fg = c.gray4, bold = true },
+    ["@markup.underline"] = { underline = true },
+    ["@label.markdown"] = { fg = c.gray4 },
+
+    -- Json
+    ["jsonMissingCommaError"] = { fg = c.error },
+    ["jsonNoQuotesError"] = { fg = c.error },
   }
 end
 
