@@ -23,6 +23,7 @@ M.plugins = {
   ["neo-tree.nvim"] = "neo-tree",
   ["nvim-cmp"] = "cmp",
   ["oil.nvim"] = "oil",
+  ["aerial.nvim"] = "aerial",
   ["telescope.nvim"] = "telescope",
   ["which-key.nvim"] = "which-key",
   ["window-picker"] = "nvim-window-picker",
