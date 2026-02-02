@@ -24,6 +24,7 @@ M.plugins = {
   ["nvim-cmp"] = "cmp",
   ["oil.nvim"] = "oil",
   ["aerial.nvim"] = "aerial",
+  ["render-markdown.nvim"] = "rendermarkdown",
   ["telescope.nvim"] = "telescope",
   ["which-key.nvim"] = "which-key",
   ["window-picker"] = "nvim-window-picker",
