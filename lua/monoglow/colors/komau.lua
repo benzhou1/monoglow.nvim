@@ -29,12 +29,12 @@ local function style(opts)
     luster = "#deeeed",
 
     -- Nvim*
-    light_blue = "#a6dbff", -- NvimLightBlue
-    light_cyan = "#8cf8f7", -- NvimLightCyan
-    light_green = "#b3f6c0", -- NvimLightGreen
-    light_magenta = "#ffcaff", -- NvimLightMagenta
-    light_red = "#ffc0b9", -- NvimLightRed
-    light_yellow = "#fce094", -- NvimLightYellow
+    light_blue = "#6e9ede", -- NvimLightBlue    (210°, 65%, 65%)
+    light_cyan = "#6ed4de", -- NvimLightCyan    (185°, 65%, 65%)
+    light_green = "#6ede8a", -- NvimLightGreen   (132°, 65%, 65%)
+    light_magenta = "#de6ed4", -- NvimLightMagenta (305°, 65%, 65%)
+    light_red = "#eb9faa", -- NvimLightRed     (351°, 65%, 78%) = glow lighter
+    light_yellow = "#ded46e", -- NvimLightYellow  (56°, 65%, 65%)
   }
 
   if background == "light" then
@@ -76,9 +76,9 @@ local function style(opts)
     keyword = ret.glow,
   }
   ret.git = {
-    add = "#65c997",
-    change = "#ffffba",
-    delete = "#ffb3ba",
+    add = ret.light_green,
+    change = ret.light_yellow,
+    delete = ret.light_red,
   }
   ret.diff = {
     add = "#294436",

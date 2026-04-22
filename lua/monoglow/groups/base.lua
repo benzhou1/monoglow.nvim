@@ -44,8 +44,10 @@ function M.get(c, opts)
 
     -- editor:diff
     DiffAdd = { bg = c.diff.add }, -- diff mode: Added line |diff.txt|
+    DiffAdded = { bg = c.diff.add }, -- diff mode: Added line |diff.txt|
     DiffChange = { bg = c.diff.change }, -- diff mode: Changed line |diff.txt|
     DiffDelete = { bg = c.diff.delete }, -- diff mode: Deleted line |diff.txt|
+    DiffRemoved = { bg = c.diff.delete }, -- diff mode: Deleted line |diff.txt|
     DiffText = { bg = c.diff.text }, -- diff mode: Changed text within a changed line |diff.txt|
 
     -- editor:menu
@@ -126,6 +128,11 @@ function M.get(c, opts)
 
     -- webdevicon
     DevIconDefault = { fg = c.icon },
+
+    -- quickfix
+    QuickFixLine = { fg = c.glow },
+    qfFileName = { fg = c.fg },
+    qfText = { fg = c.gray4 },
   }
 end
 
