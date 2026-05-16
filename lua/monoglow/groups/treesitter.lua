@@ -116,6 +116,7 @@ function M.get(c)
     ["@keyword.type.python"] = { fg = c.glow },
     ["@keyword.conditional.python"] = { fg = c.glow },
     ["@parameter.self.python"] = { fg = c.glow },
+    ["@lsp.typemod.string.documentation.python"] = { fg = c.gray4 },
     -- docstring
     ["@string.documentation.python"] = { fg = c.special.comment },
 
@@ -151,6 +152,11 @@ function M.get(c)
     ["@variable.kulala_http"] = { fg = c.glow, underline = true },
     ["@function.method.kulala_http"] = { fg = c.glow },
     ["@form_param_name.kulala_http"] = { fg = c.gray6, italic = true },
+
+    -- Taskedit
+    ["taskeditKey"] = { fg = c.gray4 },
+    ["taskeditHeading"] = { fg = c.gray4 },
+    ["taskeditReadOnly"] = { fg = c.gray4 },
   }
 end
 
