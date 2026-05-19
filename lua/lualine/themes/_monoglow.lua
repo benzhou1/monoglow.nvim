@@ -73,7 +73,7 @@ function M.get(style)
   hl.inactive = {
     a = {
       bg = config.transparent and colors.none or colors.bg,
-      fg = colors.black,
+      fg = colors.gray4,
     },
     b = {
       bg = config.transparent and colors.none or colors.bg,
