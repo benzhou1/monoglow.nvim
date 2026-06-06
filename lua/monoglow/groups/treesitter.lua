@@ -133,7 +133,7 @@ function M.get(c)
     ["@markup.link.url"] = "Underlined",
     ["@markup.list"] = { fg = c.gray4 }, -- For special punctuation that does not fall in the categories before.
     ["@markup.list.checked"] = { fg = c.gray4 }, -- For brackets and parens.
-    ["@markup.list.unchecked"] = { fg = c.glow }, -- For brackets and parens.
+    ["@markup.list.unchecked"] = { fg = c.gray4 }, -- For brackets and parens.
     ["@markup.math"] = "Special",
     ["@markup.quote"] = { fg = c.gray6 },
     ["@markup.raw"] = "String",
@@ -157,6 +157,10 @@ function M.get(c)
     ["taskeditKey"] = { fg = c.gray4 },
     ["taskeditHeading"] = { fg = c.gray4 },
     ["taskeditReadOnly"] = { fg = c.gray4 },
+
+    -- Treesitter context
+    ["TreesitterContext"] = { bg = "#3F3F3F" },
+    ["MiniIndentscopeSymbol"] = { link = "Search" },
   }
 end
 
