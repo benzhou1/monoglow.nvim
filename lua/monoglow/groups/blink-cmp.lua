@@ -5,7 +5,7 @@ M.url = "https://github.com/Saghen/blink.cmp"
 function M.get(c)
   local ret = {
     BlinkCmpKind = { fg = c.cmp.kind },
-    BlinkCmpGhostText = { fg = c.exception },
+    BlinkCmpGhostText = { fg = c.gray4 },
     BlinkCmpLabel = { fg = c.fg, bg = c.none },
     BlinkCmpLabelMatch = { fg = c.glow },
     BlinkCmpMenuSelection = { bg = c.cur_line },

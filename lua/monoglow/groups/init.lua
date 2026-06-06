@@ -31,7 +31,7 @@ M.plugins = {
   ["snacks.nvim"] = "snacks",
   ["noice.nvim"] = "noice",
   ["trouble.nvim"] = "trouble",
-  ["fzf-lua.nvim"] = "fzf-lua",
+  ["fzflua.nvim"] = "fzflua",
   ["portal.nvim"] = "portal",
   ["octo.nvim"] = "octo",
 }
