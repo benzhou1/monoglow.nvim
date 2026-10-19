@@ -14,6 +14,7 @@ local M = {}
 
 M.plugins = {
   ["smart-motion.nvim"] = "smart_motion",
+  ["beez.nvim"] = "beez",
   ["blink.cmp"] = "blink-cmp",
   ["dashboard-nvim"] = "dashboard",
   ["flash.nvim"] = "flash",
